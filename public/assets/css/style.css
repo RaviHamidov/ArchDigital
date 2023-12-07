@@ -114,7 +114,6 @@ h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 15px 0;
 }
 
 #header.header-scrolled,
@@ -438,7 +437,7 @@ h6 {
   font-size: 24px;
 }
 
-#hero h2 span   {
+#hero h2 span {
   color: #ffc451 !important;
 }
 
