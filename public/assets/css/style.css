@@ -242,7 +242,7 @@ h6 {
   font-size: 14px;
   text-transform: none;
   color: #151515;
-  font-weight: 400; 
+  font-weight: 400;
 }
 
 .navbar .dropdown ul a i {
@@ -1339,6 +1339,20 @@ section {
   100% {
     transform: rotate(360deg);
   }
+}
+
+.formSendBtn {
+  border: 0;
+  color: #151515;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.formSendBtn input {
+  font-weight: 400;
+  border: 0;
+  padding: 0 30px;
+  background: #ffc451;
 }
 
 /*--------------------------------------------------------------
