@@ -1,298 +1,584 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Arch Digital</title>
+        <meta content="" name="description" />
+        <meta content="" name="keywords" />
 
-  <title>Arch Digital</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+        <!-- Favicons -->
+        <link href="./public/assets/img/webICON.png" rel="icon" />
+        <link href="./public/assets/img/webICON.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="./public/assets/img/webICON.png" rel="icon">
-  <link href="./public/assets/img/webICON.png" rel="apple-touch-icon">
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+            rel="stylesheet"
+        />
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
+        <!-- Vendor CSS Files -->
+        <link href="./public/assets/vendor/aos/aos.css" rel="stylesheet" />
+        <link
+            href="./public/assets/vendor/bootstrap/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="./public/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+        <link
+            href="./public/assets/vendor/boxicons/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="./public/assets/vendor/glightbox/css/glightbox.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="./public/assets/vendor/remixicon/remixicon.css"
+            rel="stylesheet"
+        />
+        <link
+            href="./public/assets/vendor/swiper/swiper-bundle.min.css"
+            rel="stylesheet"
+        />
 
-  <!-- Vendor CSS Files -->
-  <link href="./public/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="./public/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="./public/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="./public/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="./public/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="./public/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="./public/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+        <!-- Template Main CSS File -->
+        <link href="./public/assets/css/style.css" rel="stylesheet" />
+    </head>
 
-  <!-- Template Main CSS File -->
-  <link href="./public/assets/css/style.css" rel="stylesheet">
-</head>
+    <body>
+        <!-- ======= Header ======= -->
+        <header id="header" class="fixed-top">
+            <div
+                class="container d-flex align-items-center justify-content-lg-between"
+            >
+                <h1 class="logo me-auto me-lg-0">
+                    <a href="index.html"
+                        ><img
+                            src="./public/assets/img/heroLogoArch.png"
+                            alt="logo"
+                        />
+                    </a>
+                </h1>
+                <nav id="navbar" class="navbar order-last order-lg-0">
+                    <ul>
+                        <li>
+                            <a class="nav-link scrollto active" href="#hero"
+                                >Ana səhifə</a
+                            >
+                        </li>
+                        <li>
+                            <a class="nav-link scrollto" href="#about"
+                                >Haqqımızda</a
+                            >
+                        </li>
+                        <li>
+                            <a class="nav-link scrollto" href="#services"
+                                >Xidmətlərimiz</a
+                            >
+                        </li>
+                        <li>
+                            <a class="nav-link scrollto" href="#portfolio"
+                                >Portfolio</a
+                            >
+                        </li>
+                        <li>
+                            <a class="nav-link scrollto" href="#team"
+                                >Komanda</a
+                            >
+                        </li>
+                        <li class="dropdown">
+                            <a href="#"
+                                ><span>Paketlər</span>
+                                <i class="bi bi-chevron-down"></i
+                            ></a>
+                            <ul>
+                                <li class="dropdown">
+                                    <a href="./public/pages/pricingPackets.html"
+                                        ><span>Standar Paket</span></a
+                                    >
+                                </li>
+                                <li class="dropdown">
+                                    <a href="./public/pages/pricingPackets.html"
+                                        ><span>Ekonom Paket</span></a
+                                    >
+                                </li>
+                                <li class="dropdown">
+                                    <a href="./public/pages/pricingPackets.html"
+                                        ><span>Premium Paket</span></a
+                                    >
+                                </li>
+                                <li class="dropdown">
+                                    <a
+                                        href="https://www.shutterstock.com/image-photo/concept-nervous-breakdown-limit-patience-260nw-2012948693.jpg"
+                                        ><span>"Özün Yarat" Paketi</span></a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nav-link scrollto" href="#contact"
+                                >Əlaqə</a
+                            >
+                        </li>
+                    </ul>
+                    <i class="bi bi-list mobile-nav-toggle"></i>
+                </nav>
+                <!-- .navbar -->
 
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center justify-content-lg-between">
-
-      <h1 class="logo me-auto me-lg-0"><a href="index.html"><img src="./public/assets/img/ArchDigita02.png" alt=""></a>
-      </h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="./public/assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Ana səhifə</a></li>
-          <li><a class="nav-link scrollto" href="#about">Haqqımızda</a></li>
-          <li><a class="nav-link scrollto" href="#services">Xidmətlərimiz</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#team">Komanda</a></li>
-          <li class="dropdown"><a href="#"><span>Paketlər</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li class="dropdown"><a href="./public/pages/standartPacket.html"><span>Standar Paket</span></a></li>
-              <li class="dropdown"><a href="./public/pages/economPacket.html"><span>Ekonom Paket</span></a></li>
-              <li class="dropdown"><a href="./public/pages/premiumPacket.html"><span>Premium Paket</span></a></li>
-              <li class="dropdown"><a href="./public/pages/creationPacket.html"><span>"Özün Yarat" Paketi</span></a>
-              </li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Əlaqə</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-      <a href="#contact" class="get-started-btn scrollto">Müraciət et</a>
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center justify-content-center">
-    <div class="container" data-aos="fade-up">
-
-      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
-        <div class="col-xl-8 col-lg-8">
-          <h1>Sosial Media Marketinq xidmətləri<span>.</span></h1>
-          <h2>Sosial mediada yeni zəmin yaradırıq <span>#</span>MarketingBurada</h2>
-        </div>
-      </div>
-
-      <div class="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-store-line"></i>
-            <h3><a href="./public/pages/SmmServices.html">SMM Xidmətləri</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-window-line"></i>
-            <h3><a href="./public/pages/seoServices.html">SEO Xidmetleri</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-calendar-todo-line"></i>
-            <h3><a href="./public/pages/developingPages.html">Sayt Yaradılması</a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-paint-brush-line"></i>
-            <h3><a href="./public/pages/">Logo
-              </a></h3>
-          </div>
-        </div>
-        <div class="col-xl-2 col-md-4">
-          <div class="icon-box">
-            <i class="ri-database-2-line"></i>
-            <h3><a href="">Hosting</a></h3>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
-            <img src="./public/assets/img/about.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-            <h3>Biz kimik?</h3>
-            <p class="fst-italic">
-              Sosial Media Marketinq üzərindən təcrübəyə əsaslanan peşəkar şirkətdir. Təcrübəli həyətimiz tərəfindən
-              sizin bütün digital reklam işlərinizi tam şəkildə görməyə hazırıq.
-              Göstərdiyimiz xidmətlərimiz Azərbaycan bazarında ən sərfəli qiymətlərlə və yüksək keyfiyyətdə
-              müştərilərimizə təqdim edilir.
-            </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> Şirkətimiz, sosial media platformalarının dinamiklərindən
-                istifadə edərək müştərilərinin brendlərinin görünürlüyünü artırmağa nail olur. </li>
-              <li><i class="ri-check-double-line"></i> Azərbaycan bazarında fəaliyyət göstərən digər şirkətlərdən fərqli
-                olaraq, biz təhlükəsiz və effektiv reklam strategiyalarını təqdim edir. </li>
-              <li><i class="ri-check-double-line"></i> Əsas məqsədimiz isə müştərilərimizin brendlərini korporativ
-                üslubda kreativ reklamlarla təşkil edərək müştəri bazalarını genişləndirməkdir.</li>
-            </ul>
-            <p class="fst-italic">
-              Bizim əsas məqsədimiz müştərilərimizin özlərinə məxsus korporativ üslubda kreativ reklamlarının daha çox
-              müştəri cəlb etməyini təmin etməkdir.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide active"><img src="./public/assets/img/gyflogoxxx.png" class="img-fluid" alt="">
+                <a href="#contact" class="get-started-btn scrollto"
+                    >Müraciət et</a
+                >
             </div>
-            <div class="swiper-slide"><img src="./public/assets/img/iatcLogo.png" class="img-fluid" alt="">
-            </div>
-            <div class="swiper-slide"><img src="./public/assets/img/iaccilogoppp.png" class="img-fluid" alt="">
-            </div>
-            <div class="swiper-slide"><img src="./public/assets/img/codemonkeyttt.png" class="img-fluid" alt="">
-            </div>
-            <div class="swiper-slide"><img src="./public/assets/img/bigaLogo5.png" class="img-fluid" alt="">
-            </div>
-            <div class="swiper-slide"><img src="./public/assets/img/lightup7.png" class="img-fluid" alt="">
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
+        </header>
+        <!-- End Header -->
 
-      </div>
-    </section><!-- End Clients Section -->
+        <!-- ======= Hero Section ======= -->
+        <section
+            id="hero"
+            class="d-flex align-items-center justify-content-center"
+        >
+            <div class="container" data-aos="fade-up">
+                <div
+                    class="row justify-content-center"
+                    data-aos="fade-up"
+                    data-aos-delay="150"
+                >
+                    <div class="col-xl-8 col-lg-8">
+                        <h1>Sosial Media Marketinq xidmətləri<span>.</span></h1>
+                        <h2>
+                            Sosial mediada yeni zəmin yaradırıq
+                            <span>#</span>MarketingBurada
+                        </h2>
+                    </div>
+                </div>
 
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="image col-lg-6" style='background-image: url("./public/assets/img/features.jpg");'
-            data-aos="fade-right">
-          </div>
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-            <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bx bx-receipt"></i>
-              <h4>SMM Xidmətləri</h4>
-              <p>Günümüzdə dünya əhalisinin tam 50.6% internet istifadəçisidir və bunun 74% Aktiv sosial media
-                istifadəçisidir.
-                Böyük şirkətlər bu rəqəmlərdən çox böyük ustalıqla istifadə edərək Sosial Media üzərində Marketinq
-                yaratmışlar.</p>
+                <div
+                    class="row gy-4 mt-5 justify-content-center"
+                    data-aos="zoom-in"
+                    data-aos-delay="250"
+                >
+                    <div class="col-xl-2 col-md-4">
+                        <div class="icon-box">
+                            <i class="ri-store-line"></i>
+                            <h3>
+                                <a href="./public/pages/SmmServices.html"
+                                    >SMM Xidmətləri</a
+                                >
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4">
+                        <div class="icon-box">
+                            <i class="ri-window-line"></i>
+                            <h3>
+                                <a href="./public/pages/seoServices.html"
+                                    >SEO Xidmetleri</a
+                                >
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4">
+                        <div class="icon-box">
+                            <i class="ri-calendar-todo-line"></i>
+                            <h3>
+                                <a href="./public/pages/developingPages.html"
+                                    >Sayt Yaradılması</a
+                                >
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4">
+                        <div class="icon-box">
+                            <i class="ri-paint-brush-line"></i>
+                            <h3>
+                                <a href="./public/pages/logoCreation.html"
+                                    >Logo
+                                </a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4">
+                        <div class="icon-box">
+                            <i class="ri-database-2-line"></i>
+                            <h3>
+                                <a href="./public/pages/hostingServices.html"
+                                    >Hosting</a
+                                >
+                            </h3>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bx bx-cube-alt"></i>
-              <h4>Sayt Yaradılması</h4>
-              <p>Günümüzdə məhsul və ya xidmət təklif edən şirkət və ya fiziki şəxsin şəxsi websəhifəsi olmağı artıq
-                mütləqdir, Amma ən əsas nüans o səhifənin unikal rahat və modern olmasıdır ki Biz öz müştərilərimizə
-                artıq 5 ildir ki mükəmməl saytlar təklif edirik.</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bx bx-images"></i>
-              <h4>Logo</h4>
-              <p>Yəqin hər biriniz bunu bilirsiniz ki istər şəxs istər şirkət fəaliyyət göstərirsə onları təmsil edən
-                bir logonun olması zəruri şərtlərdən birincisidir. Logolar sosial hesablarda, web səhifələrdə, çaplarda
-                və bütün növ brending məhsullarında mövcuddur. Şirkətimiz sərfəli qiymətə sizə Logo hazırlanması
-                xidmətin təklif edir.</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bx bx-shield"></i>
-              <h4>Reklam</h4>
-              <p>Əgər hər hansı bir şirkətin social hesablarında posterləri vardırsa amma daha böyük auditoriyada reklam
-                olunmaq istəyirsə o zaman Facebook social şəbəkəsində 1 milyonluq auditoriyada sərfəli qiymətə reklam
-                təklif edirik.</p>
-            </div>
-          </div>
-        </div>
+        </section>
+        <!-- End Hero -->
 
-      </div>
-    </section><!-- End Features Section -->
+        <main id="main">
+            <!-- ======= About Section ======= -->
+            <section id="about" class="about">
+                <div class="container" data-aos="fade-up">
+                    <div class="row">
+                        <div
+                            class="col-lg-6 order-1 order-lg-2"
+                            data-aos="fade-left"
+                            data-aos-delay="100"
+                        >
+                            <img
+                                src="./public/assets/img/about.jpg"
+                                class="img-fluid"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content"
+                            data-aos="fade-right"
+                            data-aos-delay="100"
+                        >
+                            <h3>Biz kimik?</h3>
+                            <p class="fst-italic">
+                                Sosial Media Marketinq üzərindən təcrübəyə
+                                əsaslanan peşəkar şirkətdir. Təcrübəli həyətimiz
+                                tərəfindən sizin bütün digital reklam işlərinizi
+                                tam şəkildə görməyə hazırıq. Göstərdiyimiz
+                                xidmətlərimiz Azərbaycan bazarında ən sərfəli
+                                qiymətlərlə və yüksək keyfiyyətdə
+                                müştərilərimizə təqdim edilir.
+                            </p>
+                            <ul>
+                                <li>
+                                    <i class="ri-check-double-line"></i>
+                                    Şirkətimiz, sosial media platformalarının
+                                    dinamiklərindən istifadə edərək
+                                    müştərilərinin brendlərinin görünürlüyünü
+                                    artırmağa nail olur.
+                                </li>
+                                <li>
+                                    <i class="ri-check-double-line"></i>
+                                    Azərbaycan bazarında fəaliyyət göstərən
+                                    digər şirkətlərdən fərqli olaraq, biz
+                                    təhlükəsiz və effektiv reklam
+                                    strategiyalarını təqdim edir.
+                                </li>
+                                <li>
+                                    <i class="ri-check-double-line"></i> Əsas
+                                    məqsədimiz isə müştərilərimizin brendlərini
+                                    korporativ üslubda kreativ reklamlarla
+                                    təşkil edərək müştəri bazalarını
+                                    genişləndirməkdir.
+                                </li>
+                            </ul>
+                            <p class="fst-italic">
+                                Bizim əsas məqsədimiz müştərilərimizin özlərinə
+                                məxsus korporativ üslubda kreativ reklamlarının
+                                daha çox müştəri cəlb etməyini təmin etməkdir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End About Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
+            <!-- ======= Clients Section ======= -->
+            <section id="clients" class="clients">
+                <div class="container" data-aos="zoom-in">
+                    <div class="clients-slider swiper">
+                        <div class="swiper-wrapper align-items-center">
+                            <div class="swiper-slide active">
+                                <img
+                                    src="./public/assets/img/gyflogoxxx.png"
+                                    class="img-fluid"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    src="./public/assets/img/iatcLogo.png"
+                                    class="img-fluid"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    src="./public/assets/img/iaccilogoppp.png"
+                                    class="img-fluid"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    src="./public/assets/img/codemonkeyttt.png"
+                                    class="img-fluid"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    src="./public/assets/img/bigaLogo5.png"
+                                    class="img-fluid"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="swiper-slide">
+                                <img
+                                    src="./public/assets/img/lightup7.png"
+                                    class="img-fluid"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Clients Section -->
 
-        <div class="section-title">
-          <h2>Xidmətlərimiz</h2>
-          <p>Xidmətlərimizi Yoxlayın</p>
-        </div>
+            <!-- ======= Features Section ======= -->
+            <section id="features" class="features">
+                <div class="container" data-aos="fade-up">
+                    <div class="row">
+                        <div
+                            class="image col-lg-6"
+                            style="
+                                background-image: url('./public/assets/img/features.jpg');
+                            "
+                            data-aos="fade-right"
+                        ></div>
+                        <div
+                            class="col-lg-6"
+                            data-aos="fade-left"
+                            data-aos-delay="100"
+                        >
+                            <div
+                                class="icon-box mt-5 mt-lg-0"
+                                data-aos="zoom-in"
+                                data-aos-delay="150"
+                            >
+                                <i class="bx bx-receipt"></i>
+                                <h4>SMM Xidmətləri</h4>
+                                <p>
+                                    Günümüzdə dünya əhalisinin tam 50.6%
+                                    internet istifadəçisidir və bunun 74% Aktiv
+                                    sosial media istifadəçisidir. Böyük
+                                    şirkətlər bu rəqəmlərdən çox böyük ustalıqla
+                                    istifadə edərək Sosial Media üzərində
+                                    Marketinq yaratmışlar.
+                                </p>
+                            </div>
+                            <div
+                                class="icon-box mt-5"
+                                data-aos="zoom-in"
+                                data-aos-delay="150"
+                            >
+                                <i class="bx bx-cube-alt"></i>
+                                <h4>Sayt Yaradılması</h4>
+                                <p>
+                                    Günümüzdə məhsul və ya xidmət təklif edən
+                                    şirkət və ya fiziki şəxsin şəxsi websəhifəsi
+                                    olmağı artıq mütləqdir, Amma ən əsas nüans o
+                                    səhifənin unikal rahat və modern olmasıdır
+                                    ki Biz öz müştərilərimizə artıq 5 ildir ki
+                                    mükəmməl saytlar təklif edirik.
+                                </p>
+                            </div>
+                            <div
+                                class="icon-box mt-5"
+                                data-aos="zoom-in"
+                                data-aos-delay="150"
+                            >
+                                <i class="bx bx-images"></i>
+                                <h4>Logo</h4>
+                                <p>
+                                    Yəqin hər biriniz bunu bilirsiniz ki istər
+                                    şəxs istər şirkət fəaliyyət göstərirsə
+                                    onları təmsil edən bir logonun olması zəruri
+                                    şərtlərdən birincisidir. Logolar sosial
+                                    hesablarda, web səhifələrdə, çaplarda və
+                                    bütün növ brending məhsullarında mövcuddur.
+                                    Şirkətimiz sərfəli qiymətə sizə Logo
+                                    hazırlanması xidmətin təklif edir.
+                                </p>
+                            </div>
+                            <div
+                                class="icon-box mt-5"
+                                data-aos="zoom-in"
+                                data-aos-delay="150"
+                            >
+                                <i class="bx bx-shield"></i>
+                                <h4>Reklam</h4>
+                                <p>
+                                    Əgər hər hansı bir şirkətin social
+                                    hesablarında posterləri vardırsa amma daha
+                                    böyük auditoriyada reklam olunmaq istəyirsə
+                                    o zaman Facebook social şəbəkəsində 1
+                                    milyonluq auditoriyada sərfəli qiymətə
+                                    reklam təklif edirik.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Features Section -->
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="./public/pages/smmServices.html">SMM Xidmətləri</a></h4>
-              <p>Yəqin hər biriniz bunu bilirsiniz ki istər şəxs istər şirkət fəaliyyət göstərirsə onları təmsil edən
-                bir logonun olması zəruri şərtlərdən birincisidir.</p>
-            </div>
-          </div>
+            <!-- ======= Services Section ======= -->
+            <section id="services" class="services">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-title">
+                        <h2>Xidmətlərimiz</h2>
+                        <p>Xidmətlərimizi Yoxlayın</p>
+                    </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
-            data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="./public/pages/developingPages.html">Sayt Yaradılması</a></h4>
-              <p>Günümüzdə məhsul və ya xidmət təklif edən şirkət və ya fiziki şəxsin şəxsi websəhifəsi olmağı artıq
-                mütləqdir</p>
-            </div>
-          </div>
+                    <div class="row">
+                        <div
+                            class="col-lg-4 col-md-6 d-flex align-items-stretch"
+                            data-aos="zoom-in"
+                            data-aos-delay="100"
+                        >
+                            <div class="icon-box">
+                                <div class="icon">
+                                    <i class="bx bxl-dribbble"></i>
+                                </div>
+                                <h4>
+                                    <a href="./public/pages/smmServices.html"
+                                        >SMM Xidmətləri</a
+                                    >
+                                </h4>
+                                <p>
+                                    Yəqin hər biriniz bunu bilirsiniz ki istər
+                                    şəxs istər şirkət fəaliyyət göstərirsə
+                                    onları təmsil edən bir logonun olması zəruri
+                                    şərtlərdən birincisidir.
+                                </p>
+                            </div>
+                        </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
-            data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="./public/pages/seoServices.html">SEO xidmələri</a></h4>
-              <p>Hər bir web səhifəsi olan şirkətin 1 nömrəli narahatlığı o səhifənin axtarış sistemlərində ilk
-                sıralarda olmasıdır ki buna SEO deyilir yəni Search Optimisation Systems</p>
-            </div>
-          </div>
+                        <div
+                            class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+                            data-aos="zoom-in"
+                            data-aos-delay="200"
+                        >
+                            <div class="icon-box">
+                                <div class="icon">
+                                    <i class="bx bx-file"></i>
+                                </div>
+                                <h4>
+                                    <a
+                                        href="./public/pages/developingPages.html"
+                                        >Sayt Yaradılması</a
+                                    >
+                                </h4>
+                                <p>
+                                    Günümüzdə məhsul və ya xidmət təklif edən
+                                    şirkət və ya fiziki şəxsin şəxsi websəhifəsi
+                                    olmağı artıq mütləqdir
+                                </p>
+                            </div>
+                        </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><a href="./public/pages/hostingServices.html">Hosting</a></h4>
-              <p>Hal hazırda müxtəlif posterlərlə yanaşı animasiyon çarxlar dünyada böyük rəğbət qazanmışdır.</p>
-            </div>
-          </div>
+                        <div
+                            class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0"
+                            data-aos="zoom-in"
+                            data-aos-delay="300"
+                        >
+                            <div class="icon-box">
+                                <div class="icon">
+                                    <i class="bx bx-tachometer"></i>
+                                </div>
+                                <h4>
+                                    <a href="./public/pages/seoServices.html"
+                                        >SEO xidmələri</a
+                                    >
+                                </h4>
+                                <p>
+                                    Hər bir web səhifəsi olan şirkətin 1 nömrəli
+                                    narahatlığı o səhifənin axtarış
+                                    sistemlərində ilk sıralarda olmasıdır ki
+                                    buna SEO deyilir yəni Search Optimisation
+                                    Systems
+                                </p>
+                            </div>
+                        </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-slideshow"></i></div>
-              <h4><a href="./public/pages/videoEditing.html">Video Çəkiliş</a></h4>
-              <p>Bilirik ki günümüzdə video reklamlar və ya maarifləndirici sosial çarxlar daha çox baxımlı və öndədir.
-              </p>
-            </div>
-          </div>
+                        <div
+                            class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+                            data-aos="zoom-in"
+                            data-aos-delay="100"
+                        >
+                            <div class="icon-box">
+                                <div class="icon">
+                                    <i class="bx bx-world"></i>
+                                </div>
+                                <h4>
+                                    <a
+                                        href="./public/pages/hostingServices.html"
+                                        >Hosting</a
+                                    >
+                                </h4>
+                                <p>
+                                    Hal hazırda müxtəlif posterlərlə yanaşı
+                                    animasiyon çarxlar dünyada böyük rəğbət
+                                    qazanmışdır.
+                                </p>
+                            </div>
+                        </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><a href="./public/pages/postDesign.html">Poster</a></h4>
-              <p>Yəqin ki bir çoxlarının özləri üçün kütləvi şəkildə flayer,buklet,diklet,jurnal və.s çap etdirib sonra
-                onları nə edəcəyini qərarlaşdıra bilməyən sahibkarları görmüsünüzdür</p>
-            </div>
-          </div>
+                        <div
+                            class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+                            data-aos="zoom-in"
+                            data-aos-delay="200"
+                        >
+                            <div class="icon-box">
+                                <div class="icon">
+                                    <i class="bx bx-slideshow"></i>
+                                </div>
+                                <h4>
+                                    <a href="./public/pages/videoEditing.html"
+                                        >Video Çəkiliş</a
+                                    >
+                                </h4>
+                                <p>
+                                    Bilirik ki günümüzdə video reklamlar və ya
+                                    maarifləndirici sosial çarxlar daha çox
+                                    baxımlı və öndədir.
+                                </p>
+                            </div>
+                        </div>
 
-        </div>
+                        <div
+                            class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4"
+                            data-aos="zoom-in"
+                            data-aos-delay="300"
+                        >
+                            <div class="icon-box">
+                                <div class="icon">
+                                    <!-- <i class="bx bx-info-circle"></i> -->
+                                    . . .
+                                </div>
+                                <h4>
+                                    <a
+                                        class="d-flex align-items-center justify-content-center"
+                                        href="./public/pages/allservices.html"
+                                        >Daha çox xidmət
+                                    </a>
+                                </h4>
+                                <p>
+                                    Bizim təklif etdiyimiz xidmətlər bunlarla
+                                    məhdud deyil, əlavə olaraq bizimlə əlaqə
+                                    saxlayaraq daha çox xidmətə sahib ola
+                                    bilərsiniz.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Services Section -->
 
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Cta Section ======= -->
-    <!-- <section id="cta" class="cta">
+            <!-- ======= Cta Section ======= -->
+            <!-- <section id="cta" class="cta">
       <div class="container" data-aos="zoom-in">
 
         <div class="text-center">
@@ -305,512 +591,993 @@
 
       </div>
     </section> -->
-    <!-- End Cta Section -->
+            <!-- End Cta Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
+            <!-- ======= Portfolio Section ======= -->
+            <section id="portfolio" class="portfolio">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-title">
+                        <h2>Portfolio</h2>
+                        <p>Portfolio'muzu nəzərdən keçirin</p>
+                    </div>
 
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Portfolio'muzu nəzərdən keçirin</p>
-        </div>
+                    <div class="row" data-aos="fade-up" data-aos-delay="100">
+                        <div class="col-lg-12 d-flex justify-content-center">
+                            <ul id="portfolio-flters">
+                                <li data-filter="*" class="filter-active">
+                                    All
+                                </li>
+                                <li data-filter=".filter-app">Company</li>
+                                <li data-filter=".filter-card">Education</li>
+                                <li data-filter=".filter-web">Agency</li>
+                            </ul>
+                        </div>
+                    </div>
 
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Company</li>
-              <li data-filter=".filter-card">Education</li>
-              <li data-filter=".filter-web">Agency</li>
-            </ul>
-          </div>
-        </div>
+                    <div
+                        class="row portfolio-container"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
+                        <div
+                            class="col-lg-4 col-md-6 portfolio-item filter-app"
+                        >
+                            <div class="portfolio-wrap">
+                                <img
+                                    src="./public/assets/img/iacciLogo2.png"
+                                    class="img-fluid"
+                                    alt=""
+                                />
+                                <div class="portfolio-info">
+                                    <h4>IACCI</h4>
+                                    <p>Company</p>
+                                    <div class="portfolio-links">
+                                        <!-- <a
+                                            href="https://iacci.org.il/"
+                                            data-gallery="portfolioGallery"
+                                            class="portfolio-lightbox"
+                                            title="App 1"
+                                            ><i class="bx bx-plus"></i
+                                        ></a> -->
+                                        <a
+                                            href="https://www.instagram.com/iacci/"
+                                            title="More Details"
+                                            ><i class="bx bxl-instagram"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+                        <div
+                            class="col-lg-4 col-md-6 portfolio-item filter-card"
+                        >
+                            <div class="portfolio-wrap">
+                                <img
+                                    src="./public/assets/img/iatcssssss.png"
+                                    class="img-fluid"
+                                    alt=""
+                                />
+                                <div class="portfolio-info">
+                                    <h4>IATC</h4>
+                                    <p>Education</p>
+                                    <div class="portfolio-links">
+                                        <!-- <a
+                                            href="https://iatc.edu.az/"
+                                            data-gallery="portfolioGallery"
+                                            class="portfolio-lightbox"
+                                            title="App 1"
+                                            ><i class="bx bx-plus"></i
+                                        ></a> -->
+                                        <a
+                                            href="https://www.instagram.com/iatceduaz/"
+                                            title="More Details"
+                                            ><i class="bx bxl-instagram"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="./public/assets/img/iacciLogo2.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>IACCI</h4>
-                <p>Company</p>
-                <div class="portfolio-links">
-                  <a href="https://iacci.org.il/" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                    title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.instagram.com/iacci/" title="More Details"><i class="bx bx-link"></i></a>
+                        <div
+                            class="col-lg-4 col-md-6 portfolio-item filter-card"
+                        >
+                            <div class="portfolio-wrap">
+                                <img
+                                    src="./public/assets/img/bigaLogo3.png"
+                                    class="img-fluid"
+                                    alt=""
+                                />
+                                <div class="portfolio-info">
+                                    <h4>BiGA</h4>
+                                    <p>Education</p>
+                                    <div class="portfolio-links">
+                                        <!-- <a
+                                            href="https://www.instagram.com/biga_academy/"
+                                            data-gallery="portfolioGallery"
+                                            class="portfolio-lightbox"
+                                            title="App 2"
+                                            ><i class="bx bx-plus"></i
+                                        ></a> -->
+                                        <a
+                                            href="https://www.instagram.com/biga_academy/"
+                                            title="More Details"
+                                            ><i class="bx bxl-instagram"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-lg-4 col-md-6 portfolio-item filter-card"
+                        >
+                            <div class="portfolio-wrap">
+                                <img
+                                    src="./public/assets/img/codeMonkeyLogo2.png"
+                                    class="img-fluid"
+                                    alt=""
+                                />
+                                <div class="portfolio-info">
+                                    <h4>Code Monkey</h4>
+                                    <p>Education</p>
+                                    <div class="portfolio-links">
+                                        <!-- <a
+                                            href="https://www.codemonkey.com/?utm_campaign=cm_gs_a_br_eu_ne&utm_source=google&utm_medium=cpc&utm_content=435308403087&utm_adgroup=codemonkey_em&utm_placement&gad_source=1&gclid=Cj0KCQiAsburBhCIARIsAExmsu7C6MF8NSNjQ194-RN_IxyKPlgvTcm0omfkqXPxUdTZRSxpjwfuA44aAo2DEALw_wcB"
+                                            data-gallery="portfolioGallery"
+                                            class="portfolio-lightbox"
+                                            title="App 2"
+                                            ><i class="bx bx-plus"></i
+                                        ></a> -->
+                                        <a
+                                            href="https://www.instagram.com/codemonkey_az/"
+                                            title="More Details"
+                                            ><i class="bx bxl-instagram"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-lg-4 col-md-6 portfolio-item filter-card"
+                        >
+                            <div class="portfolio-wrap">
+                                <img
+                                    src="./public/assets/img/gyfacademylogolast.png"
+                                    class="img-fluid"
+                                    alt=""
+                                />
+                                <div class="portfolio-info">
+                                    <h4>GYF</h4>
+                                    <p>Education</p>
+                                    <div class="portfolio-links">
+                                        <!-- <a
+                                            href="https://www.instagram.com/gyf_academy_/"
+                                            data-gallery="portfolioGallery"
+                                            class="portfolio-lightbox"
+                                            title="Web 2"
+                                            ><i class="bx bx-plus"></i
+                                        ></a> -->
+                                        <a
+                                            href="https://www.instagram.com/gyf_academy_/"
+                                            title="More Details"
+                                            ><i class="bx bxl-instagram"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-lg-4 col-md-6 portfolio-item filter-web"
+                        >
+                            <div class="portfolio-wrap">
+                                <img
+                                    src="./public/assets/img/lightUplogo3.png"
+                                    class="img-fluid"
+                                    alt=""
+                                />
+                                <div class="portfolio-info">
+                                    <h4>LightUp</h4>
+                                    <p>Agency</p>
+                                    <div class="portfolio-links">
+                                        <!-- <a
+                                            href="https://www.instagram.com/lightup436/"
+                                            data-gallery="portfolioGallery"
+                                            class="portfolio-lightbox"
+                                            title="App 3"
+                                            ><i class="bx bx-plus"></i
+                                        ></a> -->
+                                        <a
+                                            href="https://www.instagram.com/lightup436/"
+                                            title="More Details"
+                                            ><i class="bx bxl-instagram"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </section>
+            <!-- End Portfolio Section -->
+
+            <!-- ======= Counts Section ======= -->
+            <section id="counts" class="counts">
+                <div class="container" data-aos="fade-up">
+                    <div class="row no-gutters">
+                        <div
+                            class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"
+                            data-aos="fade-right"
+                            data-aos-delay="100"
+                        ></div>
+                        <div
+                            class="col-xl-7 ps-4 ps-lg-5 pe-4 pe-lg-1 d-flex align-items-stretch"
+                            data-aos="fade-left"
+                            data-aos-delay="100"
+                        >
+                            <div
+                                class="content d-flex flex-column justify-content-center"
+                            >
+                                <h3>
+                                    Artıq 3 illik təcrübəmizlə xidmətinizdəyik
+                                </h3>
+                                <p>
+                                    Biz bütün işlərimiz öz işimiz kimidir, və bu
+                                    işlərin arasında xeyli Təcrübə ilə görülmüş,
+                                    Mükafatlara layiq işlərdə vardır . . .
+                                </p>
+                                <div class="row">
+                                    <div
+                                        class="col-md-6 d-md-flex align-items-md-stretch"
+                                    >
+                                        <div class="count-box">
+                                            <i class="bi bi-emoji-smile"></i>
+                                            <span
+                                                data-purecounter-start="0"
+                                                data-purecounter-end="17"
+                                                data-purecounter-duration="2"
+                                                class="purecounter"
+                                            ></span>
+                                            <p>
+                                                <strong
+                                                    >Xoşbəxt Müştərilər</strong
+                                                >
+                                                Işimizin keyfiyyəti haqqında
+                                                danışmağa ehtiyac yoxdur özləri
+                                                danışır
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="col-md-6 d-md-flex align-items-md-stretch"
+                                    >
+                                        <div class="count-box">
+                                            <i
+                                                class="bi bi-journal-richtext"
+                                            ></i>
+                                            <span
+                                                data-purecounter-start="0"
+                                                data-purecounter-end="23"
+                                                data-purecounter-duration="2"
+                                                class="purecounter"
+                                            ></span>
+                                            <p>
+                                                <strong>Layihələr</strong>
+                                                Layihələrin hamısı peşəkar
+                                                komanda heyəti tərəfindən böyük
+                                                məsuliyyətlə görülür
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div
+                                        class="col-md-6 d-md-flex align-items-md-stretch"
+                                    >
+                                        <div class="count-box">
+                                            <i class="bi bi-clock"></i>
+                                            <span
+                                                data-purecounter-start="0"
+                                                data-purecounter-end="5"
+                                                data-purecounter-duration="4"
+                                                class="purecounter"
+                                            ></span>
+                                            <p>
+                                                <strong
+                                                    >İllərin təcrübəsi</strong
+                                                >
+                                                İşinizi tam rahat şəkildə bizə
+                                                əmanət edə bilərsiniz sözümüz
+                                                zəmanətimizdir
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End .content-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Counts Section -->
+
+            <!-- ======= Testimonials Section ======= -->
+            <section id="testimonials" class="testimonials">
+                <div class="container" data-aos="zoom-in">
+                    <div
+                        class="testimonials-slider swiper"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                    >
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testimonial-item">
+                                    <img
+                                        src="./public/assets/img/zara222.jpg"
+                                        class="testimonial-img"
+                                        alt=""
+                                    />
+                                    <h3>Zara Malikzade</h3>
+                                    <h4>IATC Koordinator</h4>
+                                    <p>
+                                        <i
+                                            class="bx bxs-quote-alt-left quote-icon-left"
+                                        ></i>
+                                        “Arch digital” tərəfindən təqdim edilən
+                                        Sosial Media Marketinq xidmətlərindən
+                                        çox razıyam. Onların komandası brendimiz
+                                        üçün cəlbedici kampaniyaların
+                                        hazırlanmasında yüksək səviyyədə
+                                        yaradıcılıq və strateji düşüncə nümayiş
+                                        etdirirlər. Bir çox platformada həm
+                                        izləyici artımında, həm də istifadəçi
+                                        cəlbində əhəmiyyətli artım görürük.
+                                        Onları fərqləndirən şey onların fəal
+                                        ünsiyyəti və inkişaf edən biznes
+                                        ehtiyaclarımıza əsaslanan strategiyaları
+                                        uyğunlaşdırmaq istəyidir. “Arch digital”
+                                        komandasının peşəkarlığı və fədakarlığı
+                                        onları həqiqətən bizim marketinq
+                                        səylərimizdə əvəzolunmaz tərəfdaşa
+                                        çevirdi. Nəticəyə əsaslanan və innovativ
+                                        SMM həlli axtaran hər kəsə onların
+                                        xidmətlərini ürəkdən tövsiyə edirəm.
+                                        <i
+                                            class="bx bxs-quote-alt-right quote-icon-right"
+                                        ></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End testimonial item -->
+
+                            <div class="swiper-slide">
+                                <div class="testimonial-item">
+                                    <img
+                                        src="./public/assets/img/rasuljabbarov.jpg"
+                                        class="testimonial-img"
+                                        alt=""
+                                    />
+                                    <h3>Rəsul Jabbarov</h3>
+                                    <h4>Dizayner</h4>
+                                    <p>
+                                        <i
+                                            class="bx bxs-quote-alt-left quote-icon-left"
+                                        ></i>
+                                        Sizə nailiyyətlərinizi və diqqət çəkici
+                                        sosial media strategiyalarınızı yaxından
+                                        izləyirik. Əməkdaşlıq imkanları barədə
+                                        daha ətraflı danışmağa səbirsizliklə
+                                        gözləyirik.
+                                        <i
+                                            class="bx bxs-quote-alt-right quote-icon-right"
+                                        ></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End testimonial item -->
+
+                            <div class="swiper-slide">
+                                <div class="testimonial-item">
+                                    <img
+                                        src="./public/assets/img/xadicepp.jpg"
+                                        class="testimonial-img"
+                                        alt=""
+                                    />
+                                    <h3>Xədicə Əlizadə</h3>
+                                    <h4>Network Admin</h4>
+                                    <p>
+                                        <i
+                                            class="bx bxs-quote-alt-left quote-icon-left"
+                                        ></i>
+                                        Texnologiya və Mühəndislik sahəsindəki
+                                        biliklərimi, sizi yaradıcı və effektiv
+                                        sosial media strategiyalarında
+                                        dəstəkləmək üçün istifadə etməkdən
+                                        məmnun olaram. Bizim əməkdaşlığımızın
+                                        inovativ güclü bir sinerji yaradacağına
+                                        inanıram.
+                                        <i
+                                            class="bx bxs-quote-alt-right quote-icon-right"
+                                        ></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End testimonial item -->
+
+                            <div class="swiper-slide">
+                                <div class="testimonial-item">
+                                    <img
+                                        src="./public/assets/img/ayka2.jpg"
+                                        class="testimonial-img"
+                                        alt=""
+                                    />
+                                    <h3>Arzu Eyyubova</h3>
+                                    <h4>SMM Manager</h4>
+                                    <p>
+                                        <i
+                                            class="bx bxs-quote-alt-left quote-icon-left"
+                                        ></i>
+                                        Dinamik və strategik bir SMM meneceri
+                                        olaraq, şirkətinizin digər ölkələrdəki
+                                        dijital mövcudluğunu gücləndirmək və
+                                        geniş əhəmiyyətli sosial media
+                                        nailiyyətlərinə imza atmaq üçün burada
+                                        olmaqdan heyran qalıram. Birgə işləmək
+                                        üçün gözləyirəm.
+                                        <i
+                                            class="bx bxs-quote-alt-right quote-icon-right"
+                                        ></i>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End testimonial item -->
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Testimonials Section -->
+
+            <!-- ======= Team Section ======= -->
+            <section id="team" class="team">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-title">
+                        <h2>komanda</h2>
+                        <p>komandamız nəzərdən keçirin</p>
+                    </div>
+
+                    <div class="row">
+                        <div
+                            class="col-lg-3 col-md-6 d-flex align-items-stretch"
+                        >
+                            <div
+                                class="member"
+                                data-aos="fade-up"
+                                data-aos-delay="100"
+                            >
+                                <div class="member-img">
+                                    <img
+                                        src="./public/assets/img/seyhunsaatov222.jpg"
+                                        class="img-fluid"
+                                        alt=""
+                                    />
+                                    <div class="social">
+                                        <a href=""
+                                            ><i class="bi bi-twitter"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-facebook"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-instagram"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-linkedin"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Seyhun Saatov</h4>
+                                    <span>Chief Executive Officer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-lg-3 col-md-6 d-flex align-items-stretch"
+                        >
+                            <div
+                                class="member"
+                                data-aos="fade-up"
+                                data-aos-delay="300"
+                            >
+                                <div class="member-img">
+                                    <img
+                                        src="./public/assets/img/RaviHamidov.jpg"
+                                        class="img-fluid"
+                                        alt=""
+                                    />
+                                    <div class="social">
+                                        <a href=""
+                                            ><i class="bi bi-twitter"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-facebook"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-instagram"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-linkedin"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Ravi Hamidov</h4>
+                                    <span>Chief Technical Officer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-lg-3 col-md-6 d-flex align-items-stretch"
+                        >
+                            <div
+                                class="member"
+                                data-aos="fade-up"
+                                data-aos-delay="300"
+                            >
+                                <div class="member-img">
+                                    <img
+                                        src="./public/assets/img/ayka2.jpg"
+                                        class="img-fluid"
+                                        alt=""
+                                    />
+                                    <div class="social">
+                                        <a href=""
+                                            ><i class="bi bi-twitter"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-facebook"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-instagram"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-linkedin"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Arzu Eyyubova</h4>
+                                    <span>SMM Manager</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-lg-3 col-md-6 d-flex align-items-stretch"
+                        >
+                            <div
+                                class="member"
+                                data-aos="fade-up"
+                                data-aos-delay="300"
+                            >
+                                <div class="member-img">
+                                    <img
+                                        src="./public/assets/img/xadicepp.jpg"
+                                        class="img-fluid"
+                                        alt=""
+                                    />
+                                    <div class="social">
+                                        <a href=""
+                                            ><i class="bi bi-twitter"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-facebook"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-instagram"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-linkedin"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Xədicə Əlizadə</h4>
+                                    <span>Copywriter</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div
+                            class="col-lg-3 col-md-6 d-flex align-items-stretch"
+                        >
+                            <div
+                                class="member"
+                                data-aos="fade-up"
+                                data-aos-delay="100"
+                            >
+                                <div class="member-img">
+                                    <img
+                                        src="./public/assets/img/zara222.jpg"
+                                        class="img-fluid"
+                                        alt=""
+                                    />
+                                    <div class="social">
+                                        <a href=""
+                                            ><i class="bi bi-twitter"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-facebook"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-instagram"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-linkedin"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Zəhra Məlikzadə</h4>
+                                    <span>SMM Manager</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-lg-3 col-md-6 d-flex align-items-stretch"
+                        >
+                            <div
+                                class="member"
+                                data-aos="fade-up"
+                                data-aos-delay="300"
+                            >
+                                <div class="member-img">
+                                    <img
+                                        src="./public/assets/img/qabilsdsdsd.jpg"
+                                        class="img-fluid"
+                                        alt=""
+                                    />
+                                    <div class="social">
+                                        <a href=""
+                                            ><i class="bi bi-twitter"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-facebook"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-instagram"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-linkedin"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Qabil Musazadə</h4>
+                                    <span>Videograph</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-lg-3 col-md-6 d-flex align-items-stretch"
+                        >
+                            <div
+                                class="member"
+                                data-aos="fade-up"
+                                data-aos-delay="300"
+                            >
+                                <div class="member-img">
+                                    <img
+                                        style="background-color: aquamarine"
+                                        src="./public/assets/img/zulis.png"
+                                        class="img-fluid"
+                                        alt=""
+                                    />
+                                    <div class="social">
+                                        <a href=""
+                                            ><i class="bi bi-twitter"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-facebook"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-instagram"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-linkedin"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Zəhra Suleymanzadə</h4>
+                                    <span>UX/UI Designer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="col-lg-3 col-md-6 d-flex align-items-stretch"
+                        >
+                            <div
+                                class="member"
+                                data-aos="fade-up"
+                                data-aos-delay="300"
+                            >
+                                <div class="member-img">
+                                    <img
+                                        src="./public/assets/img/rasuljabbarov.jpg"
+                                        class="img-fluid"
+                                        alt=""
+                                    />
+                                    <div class="social">
+                                        <a href=""
+                                            ><i class="bi bi-twitter"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-facebook"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-instagram"></i
+                                        ></a>
+                                        <a href=""
+                                            ><i class="bi bi-linkedin"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h4>Rəsul Jabbarov</h4>
+                                    <span>Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Team Section -->
+
+            <!-- ======= Contact Section ======= -->
+            <section id="contact" class="contact">
+                <div class="container" data-aos="fade-up">
+                    <div class="section-title">
+                        <h2>Əlaqə</h2>
+                        <p>Bizimlə Əlaqə</p>
+                    </div>
+
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3123029.5653162203!2d45.113854147933154!3d40.14599106170988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a4282a00abbd1db%3A0x703c78bec088241d!2sArch%20Digital!5e0!3m2!1saz!2saz!4v1701935563949!5m2!1saz!2saz"
+                            width="100%"
+                            height="400"
+                            style="border: 0; border-radius: 0.5rem"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-lg-4">
+                            <div class="info">
+                                <div class="address">
+                                    <i class="bi bi-geo-alt"></i>
+                                    <h4>Adress:</h4>
+                                    <p>183 Nizami str., Baku, Azerbaijan</p>
+                                </div>
+
+                                <div class="email">
+                                    <i class="bi bi-envelope"></i>
+                                    <h4>Email:</h4>
+                                    <p>info@archdigital.studio</p>
+                                </div>
+
+                                <div class="phone">
+                                    <i class="bi bi-phone"></i>
+                                    <h4>Əlaqə</h4>
+                                    <p>+994 51 230 97 17</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8 mt-5 mt-lg-0">
+                            <form
+                                action="./send_email"
+                                method="post"
+                                class="php-email-form"
+                            >
+                                <div class="row">
+                                    <div class="col-md-6 form-group">
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            class="form-control"
+                                            id="name"
+                                            placeholder="Your Name"
+                                            required
+                                        />
+                                    </div>
+                                    <div
+                                        class="col-md-6 form-group mt-3 mt-md-0"
+                                    >
+                                        <input
+                                            type="email"
+                                            class="form-control"
+                                            name="email"
+                                            id="email"
+                                            placeholder="Your Email"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        name="subject"
+                                        id="subject"
+                                        placeholder="Subject"
+                                        required
+                                    />
+                                </div>
+                                <div class="form-group mt-3">
+                                    <textarea
+                                        class="form-control"
+                                        name="message"
+                                        rows="5"
+                                        placeholder="Message"
+                                        required
+                                    ></textarea>
+                                </div>
+                                <div class="my-3">
+                                    <div class="loading">Loading</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">
+                                        Your message has been sent. Thank you!
+                                    </div>
+                                </div>
+                                <div class="formSendBtn text-start">
+                                    <input type="submit" value="Send" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Contact Section -->
+        </main>
+        <!-- End #main -->
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-info">
+                                <img
+                                    width="60%"
+                                    src="./public/assets/img/444333.png"
+                                    alt=""
+                                />
+                                <p>
+                                    183 Nizami str., Baku, Azerbaijan
+                                    <br />
+                                    <strong>Əlaqə:</strong> +994 51 230 97 17<br />
+                                    <strong>Email:</strong>
+                                    info@archdigital.studio<br />
+                                </p>
+                                <div class="social-links mt-3">
+                                    <a
+                                        href="https://www.facebook.com/srpsmmagency"
+                                        class="facebook"
+                                        ><i class="bx bxl-facebook"></i
+                                    ></a>
+                                    <a
+                                        href="https://www.instagram.com/arch_digital_/"
+                                        class="instagram"
+                                        ><i class="bx bxl-instagram"></i
+                                    ></a>
+                                    <a
+                                        href="https://www.linkedin.com/company/arch-digitalagency/"
+                                        class="linkedin"
+                                        ><i class="bx bxl-linkedin"></i
+                                    ></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-6 footer-links">
+                            <h4>Faydalı linklər</h4>
+                            <ul>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Ana səhifə</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Haqqımızda</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Xidmətlərimiz</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Portfolio</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Xəbərlər</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Xidmətlərimiz</h4>
+                            <ul>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Web Dizayn</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Sayt yaradılması</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Product Management</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Marketing</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="#">Dizayn</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 footer-newsletter"></div>
+                    </div>
+                </div>
             </div>
-          </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="./public/assets/img/iatcssssss.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>IATC</h4>
-                <p>Education</p>
-                <div class="portfolio-links">
-                  <a href="https://iatc.edu.az/" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                    title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.instagram.com/iatceduaz/" title="More Details"><i class="bx bx-link"></i></a>
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>ArchDigital</span></strong
+                    >. All Rights Reserved
                 </div>
-              </div>
+                <div class="credits">
+                    Developed & Designed by
+                    <a href="https://github.com/RaviHamidov">Ravi Hamidov</a>
+                </div>
             </div>
-          </div>
+        </footer>
+        <!-- End Footer -->
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="./public/assets/img/bigaLogo3.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>BiGA</h4>
-                <p>Education</p>
-                <div class="portfolio-links">
-                  <a href="https://www.instagram.com/biga_academy/" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.instagram.com/biga_academy/" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div id="preloader"></div>
+        <a
+            href="#"
+            class="back-to-top d-flex align-items-center justify-content-center"
+            ><i class="bi bi-arrow-up-short"></i
+        ></a>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="./public/assets/img/codeMonkeyLogo2.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Code Monkey</h4>
-                <p>Education</p>
-                <div class="portfolio-links">
-                  <a href="https://www.codemonkey.com/?utm_campaign=cm_gs_a_br_eu_ne&utm_source=google&utm_medium=cpc&utm_content=435308403087&utm_adgroup=codemonkey_em&utm_placement&gad_source=1&gclid=Cj0KCQiAsburBhCIARIsAExmsu7C6MF8NSNjQ194-RN_IxyKPlgvTcm0omfkqXPxUdTZRSxpjwfuA44aAo2DEALw_wcB"
-                    data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i
-                      class="bx bx-plus"></i></a>
-                  <a href="https://www.instagram.com/codemonkey_az/" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!-- Vendor JS Files -->
+        <script src="./public/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+        <script src="./public/assets/vendor/aos/aos.js"></script>
+        <script src="./public/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="./public/assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="./public/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="./public/assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="./public/assets/img/gyfacademylogolast.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>GYF</h4>
-                <p>Education</p>
-                <div class="portfolio-links">
-                  <a href="https://www.instagram.com/gyf_academy_/" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.instagram.com/gyf_academy_/" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="./public/assets/img/lightUplogo3.png" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>LightUp</h4>
-                <p>Agency</p>
-                <div class="portfolio-links">
-                  <a href="https://www.instagram.com/lightup436/" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="https://www.instagram.com/lightup436/" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
-      <div class="container" data-aos="fade-up">
-
-        <div class="row no-gutters">
-          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"
-            data-aos="fade-right" data-aos-delay="100"></div>
-          <div class="col-xl-7 ps-4 ps-lg-5 pe-4 pe-lg-1 d-flex align-items-stretch" data-aos="fade-left"
-            data-aos-delay="100">
-            <div class="content d-flex flex-column justify-content-center">
-              <h3>Artıq 3 illik təcrübəmizlə xidmətinizdəyik</h3>
-              <p>
-                Biz bütün işlərimiz öz işimiz kimidir, və bu işlərin arasında xeyli Təcrübə ilə görülmüş, Mükafatlara
-                layiq işlərdə vardır . . .
-              </p>
-              <div class="row">
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-emoji-smile"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="17" data-purecounter-duration="2"
-                      class="purecounter"></span>
-                    <p><strong>Xoşbəxt Müştərilər</strong> Işimizin keyfiyyəti haqqında danışmağa ehtiyac yoxdur özləri
-                      danışır</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-journal-richtext"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="23" data-purecounter-duration="2"
-                      class="purecounter"></span>
-                    <p><strong>Layihələr</strong> Layihələrin hamısı peşəkar komanda heyəti tərəfindən böyük
-                      məsuliyyətlə görülür
-                    </p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="bi bi-clock"></i>
-                    <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="4"
-                      class="purecounter"></span>
-                    <p><strong>İllərin təcrübəsi</strong> İşinizi tam rahat şəkildə bizə əmanət edə bilərsiniz sözümüz
-                      zəmanətimizdir</p>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End .content-->
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Counts Section -->
-
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="./public/assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
-                  quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="./public/assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-                  quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="./public/assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
-                  tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="./public/assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
-                  minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="./public/assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
-                  labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Testimonials Section -->
-
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>komanda</h2>
-          <p>komandamız nəzərdən keçirin</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <div class="member-img">
-                <img src="./public/assets/img/RaviHamidov.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Seyhun Saatov</h4>
-                <span>Chief Executive Officer</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="300">
-              <div class="member-img">
-                <img src="./public/assets/img/RaviHamidov.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Ravi Hamidov</h4>
-                <span>Chief Technical Officer</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="200">
-              <div class="member-img">
-                <img src="./public/assets/img/team/team-2.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-              </div>
-            </div>
-          </div> -->
-
-          <!-- <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-            <div class="member" data-aos="fade-up" data-aos-delay="400">
-              <div class="member-img">
-                <img src="./public/assets/img/team/team-4.jpg" class="img-fluid" alt="">
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-              <div class="member-info">
-                <h4>Amanda Jepson</h4>
-                <span>Accountant</span>
-              </div>
-            </div>
-          </div> -->
-
-        </div>
-
-      </div>
-    </section><!-- End Team Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Əlaqə</h2>
-          <p>Bizimlə Əlaqə</p>
-        </div>
-
-        <div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3123029.5653162203!2d45.113854147933154!3d40.14599106170988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a4282a00abbd1db%3A0x703c78bec088241d!2sArch%20Digital!5e0!3m2!1saz!2saz!4v1701935563949!5m2!1saz!2saz"
-            width="100%" height="400" style="border:0; border-radius: 0.5rem;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="row mt-5">
-
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Adress:</h4>
-                <p>10 Fikret Amirov, Baku</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>seyhunsaatov@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Əlaqə</h4>
-                <p>+994 51 230 97 17</p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0">
-
-            <form action="./send_email" method="post" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="formSendBtn text-start">
-                <input type="submit" value="Send">
-              </div>
-            </form>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="footer-info">
-              <img width="60%" src="./public/assets/img/444333.png" alt="">
-              <p>
-                10 Fikret Amirov, Baku
-                <br>
-                <strong>Əlaqə:</strong> +994 51 230 97 17<br>
-                <strong>Email:</strong> seyhunsaatov@gmail.com<br>
-              </p>
-              <div class="social-links mt-3">
-                <a href="https://www.facebook.com/srpsmmagency" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/arch_digital_/" class="instagram"><i
-                    class="bx bxl-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/arch-digitalagency/" class="linkedin"><i
-                    class="bx bxl-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Faydalı linklər</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Ana səhifə</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Haqqımızda</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Xidmətlərimiz</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Portfolio</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Xəbərlər</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Xidmətlərimiz</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Dizayn</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Sayt yaradılması</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Dizayn</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Xəbərlər</h4>
-            <p>Yeniliklərdən xəbərdar olmaq istəyirsinizsə Abunə olmaqı unutmayın !</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Abunə ol">
-            </form>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>ArchDigital</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        Developed & Designed by <a href="https://github.com/RaviHamidov">Ravi Hamidov</a>
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="./public/assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="./public/assets/vendor/aos/aos.js"></script>
-  <script src="./public/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="./public/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="./public/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="./public/assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="./public/assets/js/main.js"></script>
-
-</body>
-
+        <!-- Template Main JS File -->
+        <script src="./public/assets/js/main.js"></script>
+    </body>
 </html>
